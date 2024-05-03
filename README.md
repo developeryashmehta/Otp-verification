@@ -16,8 +16,6 @@ This is a single-page React application for OTP (One-Time Password) verification
 - HTML
 - CSS
 - Tailwind CSS (for styling)
-- React Router (for routing)
-- GitHub Actions (for CI/CD)
 
 ## Getting Started
 
