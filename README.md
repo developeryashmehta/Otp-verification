@@ -53,5 +53,7 @@ The application makes an API call to verify the entered OTP. To configure the AP
 
 Make sure to replace 'your_api_endpoint' with the actual URL of your API endpoint. This ensures that the application correctly sends OTP verification requests to your API.
 
+## Contributing
 
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request.
 
