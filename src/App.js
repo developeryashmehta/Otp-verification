@@ -1,10 +1,8 @@
-import './App.css';
-import VerifyAccount from './components/VerifyAccount';
+import "./App.css";
+import VerifyAccount from "./components/VerifyAccount";
 
 function App() {
-  return (
-    <VerifyAccount />
-  );
+  return <VerifyAccount />;
 }
 
 export default App;

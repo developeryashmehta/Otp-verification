@@ -1,7 +1,7 @@
 import React from "react";
 import { useRef, useState, useEffect } from "react";
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function VerifyAccount() {
   const [otp, setOtp] = useState(["", "", "", "", "", ""]);
@@ -23,7 +23,11 @@ export default function VerifyAccount() {
     // Move to next input box if available
     if (value !== "" && index < otpInputs.current.length - 1) {
       otpInputs.current[index + 1].focus();
-    } else if (value === "" && index <= otpInputs.current.length - 1 && index > 0) {
+    } else if (
+      value === "" &&
+      index <= otpInputs.current.length - 1 &&
+      index > 0
+    ) {
       otpInputs.current[index - 1].focus();
     }
   };
@@ -41,15 +45,15 @@ export default function VerifyAccount() {
         },
       });
       if (response.ok) {
-        toast.success('OTP verification successful!');
+        toast.success("OTP verification successful!");
       } else {
         // Handle error cases
         console.error("API Error:", response.statusText);
-        toast.error('Failed to verify OTP');
+        toast.error("Failed to verify OTP");
       }
     } catch (error) {
       console.error("API Error:", error.message);
-      toast.error('Failed to verify OTP');
+      toast.error("Failed to verify OTP");
     }
   };
   return (
@@ -88,9 +92,8 @@ export default function VerifyAccount() {
           </button>
         </div>
       </form>
-      
-      <ToastContainer />
 
+      <ToastContainer />
     </div>
   );
 }
